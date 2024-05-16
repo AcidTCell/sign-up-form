@@ -23,7 +23,7 @@
         <div class="column2">
             <div class="secondColRowOne"><h2 class="rowOneHeader">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2></div>
             <div class="secondColRowTwo">
-                <form id="signupForm" action="#" method="post">
+                <form id="signupForm" action="#" method="get">
                     <h1>Let's do this!</h1>
                     <div class="secondColRowTwoContainer">
                         <div class="form-column">
@@ -57,10 +57,9 @@
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
                             <div class="inputContainer">
                                 <input type="password" id="confirmPassword" name="confirmPassword" required>
-                                <span class="passwordConfirmationIcon"></span>
-                    
+                                <span id="passwordMismatchMessage" class="hidden"> Passwords do not match</span>
                             </div>
-                            <span id="passwordMismatchMessage" class="hidden">Passwords do not match</span>
+                            
                         </div>
                     </div>
                 </form>

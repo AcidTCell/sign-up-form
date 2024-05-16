@@ -4,7 +4,7 @@
 }
 
 *{
-    border: 0.2px solid black;
+   
 }
 :root{
     --input-border: #e5e7eb;
@@ -131,6 +131,10 @@ input:valid + span::before {
 .form-column input {
     display: block;
      /* Adjust spacing between fields */
+}
+
+#passwordMismatchMessage{
+
 }
 
 

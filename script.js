@@ -18,6 +18,5 @@ function validatePassword() {
     }
 }
 
-// Add event listeners for input events on both password and confirm password fields
 password.addEventListener("input", validatePassword);
 confirm_password.addEventListener("input", validatePassword);
