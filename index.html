@@ -51,14 +51,16 @@
                             </div>
                             <label for="phoneNumber">PHONE NUMBER</label>
                             <div class="inputContainer">
-                                <input type="text" id="phoneNumber" name="phoneNumber">
+                                <input type="tel" id="phoneNumber" name="phoneNumber">
                                 <span></span>
                             </div>
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
                             <div class="inputContainer">
                                 <input type="password" id="confirmPassword" name="confirmPassword" required>
-                                <span></span>
+                                <span class="passwordConfirmationIcon"></span>
+                    
                             </div>
+                            <span id="passwordMismatchMessage" class="hidden">Passwords do not match</span>
                         </div>
                     </div>
                 </form>

@@ -4,7 +4,7 @@
 }
 
 *{
-    
+    border: 0.2px solid black;
 }
 :root{
     --input-border: #e5e7eb;
@@ -85,6 +85,7 @@ label{
 
 span{
     margin-bottom: 1.5rem;
+    font-size: 0.5rem;
 }
 
 input{
@@ -95,6 +96,7 @@ input{
     outline-color: var(--input-border);
     appearance: none;
     box-sizing: border-box;
+    
 }
 
 input:required{
@@ -115,7 +117,7 @@ input:invalid + span::before {
     color: red;
   }
   
-  input:valid + span::before {
+input:valid + span::before {
     content: "✓";
     color: green;
   }
@@ -182,5 +184,13 @@ a{
 
 a:hover{
     color: #496b41;
+}
+
+.hidden {
+    display: none;
+}
+
+#passwordMismatchMessage{
+    color: red;
 }
 
