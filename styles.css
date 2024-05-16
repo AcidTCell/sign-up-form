@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'LogoFont';
+    src: url(Norse-Bold.otf)format('opentype');
+}
+
 *{
     border: 1px solid black;
 }
 :root{
     --input-border: #e5e7eb;
     --button-color: #596d48;
+    --dirty-white: #E8E4C9;
 }
 body,html{
     height: 100%;
@@ -15,15 +21,63 @@ body,html{
     
 }
 .column1{
-    flex: 1;
+    width: 30%;
     background-image: url(img/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
+}
+.firstColumnContainer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 10rem;
+}
+#odinLogo{
+    max-height: 7rem;
+    padding-right: 0.5rem;
+}
+.odin-text{
+    font-family: 'LogoFont', sans-serif;
+    color: white;
+    font-size: 5rem;
 }
 .column2{
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: space-evenly;
+    
+}
+
+.secondColRowTwo {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    padding-left: 2rem;
+}
+
+label{
+    font-size: 1rem;
+}
+
+input{
+    border-color: var(--input-border);
+}
+
+.form-column {
+    width: 48%; 
+    padding: 0 2rem 0 2rem;
+}
+
+.form-column label,
+.form-column input {
+    display: block;
+    margin-bottom: 1rem; /* Adjust spacing between fields */
 }
 
 button{
@@ -33,7 +87,37 @@ button{
     border: none;
     padding: 0.5rem;
 }
+
 a{
     text-decoration: none;
     color: var(--button-color);
 }
+
+.secondColRowOne, .secondColRowThree{
+    background-color: whitesmoke;
+    flex-grow: 1;
+    padding-right: 3rem;
+}
+
+.secondColRowOne{
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.secondColRowThree{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+button{
+    width: 13rem;
+}
+
+.secondColRowThree>div{
+    padding-top: 1rem;
+}
+

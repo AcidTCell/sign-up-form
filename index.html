@@ -14,18 +14,39 @@
 <body>
     <div class="container">
         <div class="column1">
-            <div class="odin-text">ODIN</div>
+            <div class="firstColumnContainer">
+                <img id='odinLogo' src="img/odin-lined.png" alt="Odin Logo">
+                <div class="odin-text">ODIN</div>
+            </div>
 
         </div>
         <div class="column2">
-            <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</div>
-            <div>
+            <div class="secondColRowOne"><h2 class="rowOneHeader">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2></div>
+            <div class="secondColRowTwo">
                 <form action="#" method="post">
-
+                    <h1>Let's do this!</h1>
+                    <div class="secondColRowTwo">
+                        <div class="form-column">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" id="firstName" name="firstName">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                        <div class="form-column">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" id="lastName" name="lastName">
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input type="text" id="phoneNumber" name="phoneNumber">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword">
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div>
-                <button type="submit">Create Account</button>
+            <div class="secondColRowThree">
+                <div class="buttonContainer"><button type="submit">Create Account</button></div>
                 <div>Already have an account? <a href="#">Log in</a></div>
             </div>
         </div>
