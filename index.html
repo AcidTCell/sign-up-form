@@ -23,30 +23,48 @@
         <div class="column2">
             <div class="secondColRowOne"><h2 class="rowOneHeader">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h2></div>
             <div class="secondColRowTwo">
-                <form action="#" method="post">
+                <form id="signupForm" action="#" method="post">
                     <h1>Let's do this!</h1>
-                    <div class="secondColRowTwo">
+                    <div class="secondColRowTwoContainer">
                         <div class="form-column">
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" id="firstName" name="firstName">
+                            <div class="inputContainer">
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span></span>
+                            </div>
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email">
+                            <div class="inputContainer">
+                                <input type="email" id="email" name="email" required>
+                                <span></span>
+                            </div>
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password">
+                            <div class="inputContainer">
+                                <input type="password" id="password" name="password" required>
+                                <span></span>
+                            </div>
                         </div>
                         <div class="form-column">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" id="lastName" name="lastName">
+                            <div class="inputContainer">
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span></span>
+                            </div>
                             <label for="phoneNumber">PHONE NUMBER</label>
-                            <input type="text" id="phoneNumber" name="phoneNumber">
+                            <div class="inputContainer">
+                                <input type="text" id="phoneNumber" name="phoneNumber">
+                                <span></span>
+                            </div>
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword">
+                            <div class="inputContainer">
+                                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="secondColRowThree">
-                <div class="buttonContainer"><button type="submit">Create Account</button></div>
+                <div class="buttonContainer"><button type="submit" form="signupForm">Create Account</button></div>
                 <div>Already have an account? <a href="#">Log in</a></div>
             </div>
         </div>

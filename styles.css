@@ -4,12 +4,17 @@
 }
 
 *{
-    border: 1px solid black;
+    
 }
 :root{
     --input-border: #e5e7eb;
     --button-color: #596d48;
     --dirty-white: #E8E4C9;
+    --input-valid: rgb(0, 255, 0);
+    --input-invalid: rgb(255, 51, 51);
+    --input-required: #9b9c9e;
+    --input-hover: rgb(235, 235, 235);
+
 }
 body,html{
     height: 100%;
@@ -53,6 +58,7 @@ body,html{
 .secondColRowTwo {
     display: flex;
     justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -61,13 +67,58 @@ h1{
     padding-left: 2rem;
 }
 
+.secondColRowTwoContainer{
+    display: flex;
+}
+
+.inputContainer{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+
+
 label{
-    font-size: 1rem;
+    font-size: 0.8rem;
+}
+
+span{
+    margin-bottom: 1.5rem;
 }
 
 input{
-    border-color: var(--input-border);
+    border-style: none;
+    border: 1px solid var(--input-border);
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    outline-color: var(--input-border);
+    appearance: none;
+    box-sizing: border-box;
 }
+
+input:required{
+    border: 1px solid var(--input-required);
+}
+
+input:hover{
+    background-color: var(--input-hover);
+}
+
+input:invalid{
+    border: 1px solid var(--input-invalid);
+}
+
+
+input:invalid + span::before {
+    content: "✖";
+    color: red;
+  }
+  
+  input:valid + span::before {
+    content: "✓";
+    color: green;
+  }
 
 .form-column {
     width: 48%; 
@@ -77,21 +128,9 @@ input{
 .form-column label,
 .form-column input {
     display: block;
-    margin-bottom: 1rem; /* Adjust spacing between fields */
+     /* Adjust spacing between fields */
 }
 
-button{
-    background-color: var(--button-color);
-    color: white;
-    border-radius: 10px;
-    border: none;
-    padding: 0.5rem;
-}
-
-a{
-    text-decoration: none;
-    color: var(--button-color);
-}
 
 .secondColRowOne, .secondColRowThree{
     background-color: whitesmoke;
@@ -110,14 +149,38 @@ a{
     flex-direction: column;
     padding-right: 2rem;
     padding-left: 2rem;
-    padding-top: 1rem;
+    
+    
 }
 
 button{
     width: 13rem;
+    background-color: var(--button-color);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: #496b41;
 }
 
 .secondColRowThree>div{
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--button-color);
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover{
+    color: #496b41;
 }
 
