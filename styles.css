@@ -4,7 +4,7 @@
 }
 
 *{
-   
+   border: 1px solid black;
 }
 :root{
     --input-border: #e5e7eb;
@@ -78,10 +78,12 @@ h1{
 .inputContainer{
     display: flex;
     gap: 5px;
-    align-items: center;
 }
 
-
+.inputContainer{
+    display: flex;
+    align-items:center;
+}
 
 label{
     font-size: 0.8rem;
@@ -100,6 +102,8 @@ input{
     outline-color: var(--input-border);
     appearance: none;
     box-sizing: border-box;
+    width: 200px;
+    height: 1.5rem;
     
 }
 
@@ -128,14 +132,10 @@ input:valid + span::before {
 
 .form-column {
     width: 30%; 
-    padding: 0 0 0 2rem;
+    padding: 0 1rem 0 2rem;
 }
 
-.form-column label,
-.form-column input {
-    display: block;
-     /* Adjust spacing between fields */
-}
+
 
 
 .secondColRowOne, .secondColRowThree{
@@ -190,7 +190,7 @@ a:hover{
     color: #496b41;
 }
 
-.hidden {
+.hidden{
     display: none;
 }
 
