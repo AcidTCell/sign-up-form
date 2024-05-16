@@ -62,6 +62,10 @@ body,html{
     
 }
 
+#signupForm{
+    width: 100%;
+}
+
 h1{
     font-family: "Montserrat", sans-serif;
     padding-left: 2rem;
@@ -123,18 +127,14 @@ input:valid + span::before {
   }
 
 .form-column {
-    width: 48%; 
-    padding: 0 2rem 0 2rem;
+    width: 30%; 
+    padding: 0 0 0 2rem;
 }
 
 .form-column label,
 .form-column input {
     display: block;
      /* Adjust spacing between fields */
-}
-
-#passwordMismatchMessage{
-
 }
 
 
